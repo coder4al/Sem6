@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="reg-form">
+    <form action="">
+      <div class="container">
+        <h1>TechnicalQuiz</h1>
+        <p>Online Registration</p>
+      </div>
+
+      <label for="firstName" id="first-name-label">First Name</label>
+      <label for="lastName" id="last-name-label">Last Name</label>
+      <input placeholder="First Name" type="text" name="firstName" id="first-name-input" required />
+
+      <input placeholder="Last Name" type="text" name="lastName" id="last-name-input" />
+
+      <label for="email">Email Address</label>
+      <input placeholder="Email Address" type="text" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input placeholder="Phone Number" type="number" name="phone" required />
+
+      <label for="address">Physical Address</label>
+      <input placeholder="Physical Address" type="text" name="address" required />
+
+      <label for="dob">Date of Birth</label>
+      <div class="dob">
+        <input type="number" name="day" required placeholder="Day" />
+        <input type="number" name="month" required placeholder="Month" />
+        <input type="number" name="year" required placeholder="Year" />
+        <img src="calendar.svg" alt="calendar-image">
+      </div>
+
+      <div class="btn">
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
