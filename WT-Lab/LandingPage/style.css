@@ -67,6 +67,7 @@ img {
   background-color: var(--main-color);
   border: none;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .main {
