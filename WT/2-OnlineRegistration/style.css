@@ -8,6 +8,7 @@
   --primary-color: #21b573;
   --secondary-color: #ebfaf2;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -17,7 +18,7 @@ body {
 .reg-form {
   width: 900px;
   height: auto;
-  padding: 40px ;
+  padding: 40px;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px 1px grey;
@@ -67,51 +68,56 @@ input:focus {
   outline: none;
 }
 
-#first-name-label, #first-name-input, #last-name-label, #last-name-input{
-    display: inline-block;
-    width: 45%;
+#first-name-label,
+#first-name-input,
+#last-name-label,
+#last-name-input {
+  display: inline-block;
+  width: 45%;
 }
 
-#last-name-label, #last-name-input{
-    margin-left: 6%;
+#last-name-label,
+#last-name-input {
+  margin-left: 6%;
 }
 
-input[name="phone"]::-webkit-inner-spin-button{
+input[name="phone"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.dob, .btn{
+.dob,
+.btn {
   display: flex;
   justify-content: space-between;
   width: 96%;
   margin: 20px 0 0 2%;
 }
 
-.dob input{
+.dob input {
   margin: 0;
 }
 
-input[name=day]{
+input[name=day] {
   width: 20%;
 }
 
-input[name=month]{
-  width: 30%;
+input[name=month] {
+  width: 27%;
 }
 
-input[name=year]{
-  width: 25%;
+input[name=year] {
+  width: 33%;
 }
 
-img{
-    width: 5%;
+img {
+  width: 5%;
 }
 
-.btn{
+.btn {
   margin-top: 40px;
 }
 
-.btn button{
+.btn button {
   width: 40%;
   border: none;
   padding: 20px;
@@ -122,41 +128,87 @@ img{
   font-weight: bold;
 }
 
-#submit{
+#submit {
   background-color: #21b572d2;
 }
 
-#reset{
+#reset {
   background-color: #a52a2ad2;
 }
 
-#submit:hover{
+#submit:hover {
   background-color: var(--primary-color);
 }
 
-#reset:hover{
+#reset:hover {
   background-color: #a52a2a;
 }
 
-@media (max-width: 900px){
-  .reg-form{
-   width: 100%;
-   padding : 0;
-   margin-top: 0;
+@media (max-width: 900px) {
+  .reg-form {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    border-radius: none;
+    box-shadow: none;
   }
 
-  h1{
+  h1 {
     font-size: 30px;
-    padding : 10px;
+    padding: 10px;
   }
 
-  p{
+  p {
     font-size: 20px;
-    padding : 20px;
+    padding: 20px;
   }
 
-  label, input{
+  label,
+  input {
+    margin-left: 4%;
+    width: 92%;
+  }
+  
+  label {
+  font-size: 15px;
+}
+
+  #first-name-label,
+  #first-name-input,
+  #last-name-label,
+  #last-name-input {
+    width: 45%;
+  }
+
+  #last-name-label,
+  #last-name-input {
+    margin-left: 2%;
+  }
+
+  input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  input::placeholder {
+    font-size: 15px;
+  }
+
+  .dob,
+  .btn {
+    width: 92%;
     margin-left: 4%;
   }
-}
   
+  img {
+  width: 10%;
+}
+
+.btn button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+}
