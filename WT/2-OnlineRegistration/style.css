@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #21b573;
+  --secondary-color: #ebfaf2;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reg-form {
+  width: 900px;
+  height: auto;
+  padding: 40px ;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px grey;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 0 20px;
+}
+
+p {
+  padding: 30px;
+  font-size: 30px;
+  background-color: var(--secondary-color);
+}
+
+label,
+input {
+  display: block;
+  margin: 20px 0 0 2%;
+  width: 96%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: #ccc;
+}
+
+input:focus {
+  outline: none;
+}
+
+#first-name-label, #first-name-input, #last-name-label, #last-name-input{
+    display: inline-block;
+    width: 45%;
+}
+
+#last-name-label, #last-name-input{
+    margin-left: 6%;
+}
+
+input[name="phone"]::-webkit-inner-spin-button{
+  display: none;
+}
+
+.dob, .btn{
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: 20px 0 0 2%;
+}
+
+.dob input{
+  margin: 0;
+}
+
+input[name=day]{
+  width: 20%;
+}
+
+input[name=month]{
+  width: 30%;
+}
+
+input[name=year]{
+  width: 25%;
+}
+
+img{
+    width: 5%;
+}
+
+.btn{
+  margin-top: 40px;
+}
+
+.btn button{
+  width: 40%;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submit{
+  background-color: #21b572d2;
+}
+
+#reset{
+  background-color: #a52a2ad2;
+}
+
+#submit:hover{
+  background-color: var(--primary-color);
+}
+
+#reset:hover{
+  background-color: #a52a2a;
+}
+
+@media (max-width: 900px){
+  .reg-form{
+   width: 100%;
+   padding : 0;
+   margin-top: 0;
+  }
+
+  h1{
+    font-size: 30px;
+    padding : 10px;
+  }
+
+  p{
+    font-size: 20px;
+    padding : 20px;
+  }
+
+  label, input{
+    margin-left: 4%;
+  }
+}
+  
