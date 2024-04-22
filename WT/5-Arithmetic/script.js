@@ -2,7 +2,7 @@ function calculate(operation) {
   const num1 = parseFloat(prompt("Enter First Number: "));
   const num2 = parseFloat(prompt("Enter Second Number: "));
 
-  if (!num1 || !num2) {
+  if (isNaN(num1) || isNaN(num2)) {
     alert("Invalid Input");
   } else {
     switch (operation) {
