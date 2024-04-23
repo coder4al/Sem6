@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <h2>REGISTRATION FORM</h2>
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">email</label></td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">password</label></td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="c-password">Confirm password</label></td>
+          <td><input type="password" name="c-password" /></td>
+        </tr>
+        <tr>
+          <td><label for="f-name">Father name</label></td>
+          <td><input type="text" name="f-name" /></td>
+        </tr>
+        <tr>
+          <td><label for="m-name">Mother name</label></td>
+          <td><input type="text" name="m-name" /></td>
+        </tr>
+        <tr>
+          <td><label for="dob">d.o.b</label></td>
+          <td><input type="date" name="dob" /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">gender</label></td>
+          <td>
+            <input type="radio" name="gender" />Male &nbsp;
+            <input type="radio" name="gender" />Female
+          </td>
+        </tr>
+        <tr>
+          <td><label for="branch">branch</label></td>
+          <td>
+            <select name="branch">
+              <option value="cse">cse</option>
+              <option value="cse">ece</option>
+              <option value="cse">eee</option>
+              <option value="cse">civil</option>
+              <option value="cse">mech</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">address</label></td>
+          <td><textarea name="address"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="phone">phone no</label></td>
+          <td><input type="tel" /></td>
+        </tr>
+        <tr>
+          <td><label for="profile">profile picture</label></td>
+          <td><input type="file" accept="image/*" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" id="agree">
+            <input type="checkbox" name="agree" required />&nbsp;
+            <p>
+              I confirm that the information provided is accurate and complete
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="reset">Reset</button></td>
+          <td><button type="submit">Submit</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

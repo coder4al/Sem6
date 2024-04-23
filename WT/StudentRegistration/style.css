@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 600px;
+  height: auto;
+  background-color: #ffcb9a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  padding: 20px;
+}
+
+td {
+  padding: 5px;
+}
+
+label {
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 200px;
+  border: 1px solid #fc7a00;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 100px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+option {
+  text-transform: uppercase;
+}
+
+p {
+  display: inline;
+  font-size: 15px;
+  color: #833f00;
+}
+
+#agree {
+  padding: 20px 0;
+}
+
+button {
+  padding: 5px;
+  width: 100px;
+  margin: 0 50px 10px;
+  border-radius: 3px;
+  background-color: #fdd8b6;
+  box-shadow: 0 0 10px 1px #ff7b00;
+}
