@@ -7,24 +7,29 @@
 body{
     display: flex;
     justify-content: center;
+    background:radial-gradient(at bottom right, #ff6600, #00aeff);
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 form{
     width: 600px;
-    height: auto;
-    margin-top: 20px;
-    background-color: #c5ecda;
+    height: 700px;
+    margin-top: 40px;
+    background-color: #dddddd1a;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
+    box-shadow: 0 0 10px 0.1px #00000036;
+    border-radius: 10px;
 }
 
 h1{
-    margin: 20px;
-    color: #005f33;
+    margin: 50px;
+    color: #ddd;
 }
 
 td{
@@ -33,7 +38,7 @@ td{
 
 label{
     text-transform:capitalize;
-    color: #005f33;
+    color: #ddd;
 }
 
 input{
@@ -41,7 +46,41 @@ input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 5px;
-    border: 1px solid #23d883;
+    border: none;
+    background-color: #dddddd33;
     width: 200px;
+    color: #555;
 }
 
+input:focus{
+    outline: none;
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #dddddd73;
+    border: none;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #dddddd33;
+}
