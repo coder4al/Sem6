@@ -38,7 +38,7 @@ input,
 select,
 textarea {
   width: 210px;
-  border: 1px solid #fc7a00;
+  border: 1px solid #ff9838;
   border-radius: 3px;
   padding: 5px;
   font-size: 15px;
@@ -51,6 +51,12 @@ textarea {
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
+}
+
+input:focus,select:focus,
+textarea:focus{
+  outline: none;
+  background-color: #fff3e8;
 }
 
 option {
@@ -73,7 +79,7 @@ button {
   margin: 0 70px 10px;
   border-radius: 3px;
   background-color: #fdd8b6;
-  box-shadow: 0 0 10px 1px #ff7b00;
+  box-shadow: 0 0 5px 1px #ff7b00;
 }
 
 #address{
