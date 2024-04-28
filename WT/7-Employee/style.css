@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+    background-color: #c5ecda;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1{
+    margin: 20px;
+    color: #005f33;
+}
+
+td{
+    padding: 10px 30px;
+}
+
+label{
+    text-transform:capitalize;
+    color: #005f33;
+}
+
+input{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #23d883;
+    width: 200px;
+}
+
