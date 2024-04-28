@@ -81,7 +81,7 @@ input:focus {
   margin-left: 6%;
 }
 
-input[name="phone"]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
